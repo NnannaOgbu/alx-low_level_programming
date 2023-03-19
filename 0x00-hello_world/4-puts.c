@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - using puts function to pnt a text
+*main - main point
 *return: always 0 (succes)
 */
 int main(void)
