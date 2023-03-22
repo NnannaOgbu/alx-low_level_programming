@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - Entry point
+ * @print_alphabet: function to print alphabets
  *
  *: Return: Always 0.
  */
