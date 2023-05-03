@@ -5,13 +5,8 @@
  *
  * Return: Always 0.
  */
-
-void beforeMain();
-
 int main(void)
 {
-	beforeMain();
-
-	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
-	return (0);
+    printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
+    return (0);
 }
