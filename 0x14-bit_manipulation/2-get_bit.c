@@ -1,21 +1,20 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
- * function that converts a binary number to an unsigned int
- * @b: is pointing to a string of 0 and 1 chars
+ * get_bit - returns the value of a bit at an index in a decimal number
+ * @n: number to search
+ * @index: index of the bit
  *
- * Return: the address of the new element, or NULL if it failed
+ * Return: value of the bit
  */
-
 int get_bit(unsigned long int n, unsigned int index)
 {
-	/* Check if index is out of range */
-	if (index >= sizeof(unsigned long int) * 8)
-		return -1;
+	int bit_val;
 
-	/* Shift n right by index bits and check the least significant bit */
-	return (n >> index) & 1;
+	if (index > 63)
+		return (-1);
+
+	bit_val = (n >> index) & 1;
+
+	return (bit_val);
 }
